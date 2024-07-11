@@ -1,6 +1,10 @@
 import { HiSearch } from "react-icons/hi";
 
-export const SearchBar = ({ onSubmit }) => {
+type PropSubmit = {
+  onSubmit: (e: React.FormEvent<HTMLFormElement>) => void;
+};
+
+export const SearchBar = ({ onSubmit }: PropSubmit) => {
   return (
     <header className="bg-lime-400 p-5 flex justify-center items-center mb-20 rounded-2xl">
       <form

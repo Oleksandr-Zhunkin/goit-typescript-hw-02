@@ -1,4 +1,11 @@
-export const ImageCard = ({ image, openModal }) => {
+import { Image, ImageForModal } from "../App/App.types";
+
+interface OpenModal {
+  image: Image;
+  openModal: (image: ImageForModal) => void;
+}
+
+export const ImageCard = ({ image, openModal }: OpenModal) => {
   return (
     <div className="flex justify-center items-center rounded-md overflow-hidden">
       <img
