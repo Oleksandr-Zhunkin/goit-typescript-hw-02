@@ -8,7 +8,7 @@ export const SearchBar = ({ onSubmit }: PropSubmit) => {
   return (
     <header className="bg-lime-400 p-5 flex justify-center items-center mb-20 rounded-2xl">
       <form
-        onSubmit={onSubmit}
+        onSubmit={()}
         className="flex justify-center items-center gap-5 relative"
       >
         <HiSearch className="absolute top-4 left-2 text-gray-500" />

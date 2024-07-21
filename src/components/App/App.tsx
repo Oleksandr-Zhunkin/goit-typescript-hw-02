@@ -58,9 +58,8 @@ function App() {
     const searchInput = form.elements.namedItem("search") as HTMLInputElement;
     const searchValue = searchInput.value;
 
-    if (searchValue.length === 0) {
-      toast("Field cannot be empty");
-      return;
+    if (!searchValue.length) {
+      return toast("Field cannot be empty");
     }
 
     setSearchValue(searchValue);
